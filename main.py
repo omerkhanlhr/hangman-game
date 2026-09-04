@@ -71,11 +71,10 @@ def main():
 
         # Correct guess
         if guess in answer:
-            for index, letter in enumerate(answer):
-                if letter == guess:
-                    hint[index] = guess
+            for i in range(len(answer)):
+                if answer[i] == guess:
+                    hint[i] = guess
 
-            print("Good guess!")
 
         # Wrong guess
         else:
